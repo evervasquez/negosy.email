@@ -1,0 +1,74 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Overpass" href="https://fonts.googleapis.com/css2?family=Overpass" />
+    <mj-preview>Resumen diario negosy.com</mj-preview>
+    <mj-title>Negosy</mj-title>
+    <mj-attributes>
+      <mj-text padding="0" />
+      <mj-all font-family="Overpass" color="#3e4348" font-size="14px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#fff">
+  <mj-section full-width="full-width" 
+  background-color="#f5fafa" 
+  border-bottom="1px solid #e9ebf0">
+    <mj-column width="100%">
+        <mj-image width="48px" src="https://negosy.com/static/img/logo_app_negosy.png" />
+        <mj-text align="center">
+          <h3>
+            Naná, sus ventas del sábado
+          </h1>
+        </mj-text>
+    </mj-column>
+  </mj-section>
+
+  <mj-section>
+      <mj-column width="100%">
+          <mj-text font-weight="bold" align=center>
+              miércoles may 20, 12:00 AM – miércoles may 20, 11:59 PM EDT
+          </mj-text>
+      </mj-column>
+  </mj-section>
+
+  <mj-section>
+      <mj-group>
+        <mj-column width="50%">
+          <mj-text align="center">
+            <p>VENTAS BRUTAS</h2>
+            <p>S/ 120.00</p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text align="center">
+            <p>REEMBOLSOS</h2>
+            <p>S/ 120.00</p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text align="center">
+            <p>DESCUENTOS</h2>
+            <p>S/ 120.00</p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text mj-class="myfont" align="center">
+            <p>VENTAS NETAS</h2>
+            <p>S/ 120.00</p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text mj-class="myfont" align="center">
+            <p>IMPUESTOS</h2>
+            <p>S/ 120.00</p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text mj-class="myfont" align="center">
+            <p>TOTAL RECIBIDO</h2>
+            <p>S/ 120.00</p>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>
