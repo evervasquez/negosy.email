@@ -1,30 +1,35 @@
 <mjml>
   <mj-head>
-    <mj-font name="Overpass" href="https://fonts.googleapis.com/css2?family=Overpass" />
     <mj-preview>Resumen diario negosy.com</mj-preview>
     <mj-title>Negosy</mj-title>
+    <mj-font name="Ubuntu" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" />
     <mj-attributes>
       <mj-text padding="0" />
-      <mj-all font-family="Overpass" color="#3e4348" font-size="14px" />
+      <mj-all font-family="Ubuntu, Helvetica" color="#3e4348" font-size="14px" />
+      <mj-class name="subtitle" line-height="1.5" color="#92959a"/>
+      <mj-class name="title" color="black" line-height="1.5" font-size="24px"/>
+      <mj-class name="title-summary" color="#64696e" line-height="2"/>
+      <mj-class name="text-amount" color="black" font-size="20px" />
+      <mj-class name="date" color="black" line-height="1.5"/>
     </mj-attributes>
   </mj-head>
   <mj-body background-color="#fff">
   <mj-section full-width="full-width" 
-  background-color="#f5fafa" 
-  border-bottom="1px solid #e9ebf0">
-    <mj-column width="100%">
+  background-color="#f9faf9" >
+    <mj-column width="100%" padding-left="20px" padding-right="20px">
         <mj-image width="48px" src="https://negosy.com/static/img/logo_app_negosy.png" />
-        <mj-text align="center">
-          <h3>
+        <mj-text mj-class="title" align="center">
             Naná, sus ventas del sábado
-          </h1>
         </mj-text>
+        <mj-text align="center" mj-class="subtitle">
+              Obtenga informes de ventas personalizados y en tiempo real en cualquier momento en su Panel de Datos Square o desde la aplicación gratis Panel de Datos Square para iPhone.
+          </mj-text>
     </mj-column>
   </mj-section>
 
   <mj-section>
       <mj-column width="100%">
-          <mj-text font-weight="bold" align=center>
+          <mj-text mj-class="date" align=center>
               miércoles may 20, 12:00 AM – miércoles may 20, 11:59 PM EDT
           </mj-text>
       </mj-column>
@@ -33,42 +38,81 @@
   <mj-section>
       <mj-group>
         <mj-column width="50%">
-          <mj-text align="center">
-            <p>VENTAS BRUTAS</h2>
-            <p>S/ 120.00</p>
+          <mj-text align="center" mj-class="title-summary">
+            VENTAS TOTALES
+          </mj-text>
+          <mj-text align="center" mj-class="text-amount">
+            S/120.00
           </mj-text>
         </mj-column>
         <mj-column width="50%">
-          <mj-text align="center">
-            <p>REEMBOLSOS</h2>
-            <p>S/ 120.00</p>
+          <mj-text align="center" mj-class="title-summary">
+            GASTOS DEL DÍA
+          </mj-text>
+          <mj-text align="center" mj-class="text-amount">
+            S/0.00
+          </mj-text>
+          <mj-spacer height="20px" />
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text align="center" mj-class="title-summary">
+            DESCUENTOS
+          </mj-text>
+          <mj-text align="center" mj-class="text-amount">
+            S/0.00
           </mj-text>
         </mj-column>
         <mj-column width="50%">
-          <mj-text align="center">
-            <p>DESCUENTOS</h2>
-            <p>S/ 120.00</p>
+          <mj-text align="center" mj-class="title-summary">
+            REMBOLSOS
+          </mj-text>
+          <mj-text align="center" mj-class="text-amount">
+            S/0.00
+          </mj-text>
+          <mj-spacer height="20px" />
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text align="center" mj-class="title-summary">
+            VENTAS FACTURADAS
+          </mj-text>
+          <mj-text align="center" mj-class="text-amount">
+            S/0.00
           </mj-text>
         </mj-column>
         <mj-column width="50%">
-          <mj-text mj-class="myfont" align="center">
-            <p>VENTAS NETAS</h2>
-            <p>S/ 120.00</p>
+          <mj-text align="center" mj-class="title-summary">
+            GANANCIAS DEL DÍA
           </mj-text>
-        </mj-column>
-        <mj-column width="50%">
-          <mj-text mj-class="myfont" align="center">
-            <p>IMPUESTOS</h2>
-            <p>S/ 120.00</p>
-          </mj-text>
-        </mj-column>
-        <mj-column width="50%">
-          <mj-text mj-class="myfont" align="center">
-            <p>TOTAL RECIBIDO</h2>
-            <p>S/ 120.00</p>
+          <mj-text align="center" mj-class="text-amount">
+            S/0.00
           </mj-text>
         </mj-column>
       </mj-group>
+  </mj-section>
+    
+    <mj-section>
+      <mj-column width="100%">
+        <mj-text padding-left="20px" mj-class="title-summary">
+          VENTAS POR HORA
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%">
+        <mj-image width="400px" src="https://quickchart.io/chart?bkg=white&c=%7B%0A%20%20%22type%22%3A%20%22bar%22%2C%0A%20%20%22data%22%3A%20%7B%0A%20%20%20%20%22labels%22%3A%20%5B%0A%20%20%20%20%20%200%2C%0A%20%20%20%20%20%203%2C%0A%20%20%20%20%20%206%2C%0A%20%20%20%20%20%209%2C%0A%20%20%20%20%20%2012%2C%0A%20%20%20%20%20%2015%2C%0A%20%20%20%20%20%2018%2C%0A%20%20%20%20%20%2021%2C%0A%20%20%20%20%20%2024%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22datasets%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22label%22%3A%20%22Ventas%20por%20hora%22%2C%0A%20%20%20%20%20%20%20%20%22backgroundColor%22%3A%20%22rgba(0%2C%20118%2C%20168%2C%200.7)%22%2C%0A%20%20%20%20%20%20%20%20%22borderColor%22%3A%20%22rgb(0%2C%2099%2C%20148)%22%2C%0A%20%20%20%20%20%20%20%20%22borderWidth%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22data%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%2073%2C%0A%20%20%20%20%20%20%20%20%20%200%2C%0A%20%20%20%20%20%20%20%20%20%200%2C%0A%20%20%20%20%20%20%20%20%20%2041%2C%0A%20%20%20%20%20%20%20%20%20%2029%2C%0A%20%20%20%20%20%20%20%20%20%2061%2C%0A%20%20%20%20%20%20%20%20%20%2065%2C%0A%20%20%20%20%20%20%20%20%20%2059%2C%0A%20%20%20%20%20%20%20%20%20%2038%0A%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%2C%0A%20%20%22options%22%3A%20%7B%0A%20%20%20%20%22responsive%22%3A%20true%2C%0A%20%20%20%20%22legend%22%3A%20%7B%0A%20%20%20%20%20%20%22position%22%3A%20%22bottom%22%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22title%22%3A%20%7B%0A%20%20%20%20%20%20%22display%22%3A%20false%2C%0A%20%20%20%20%20%20%22text%22%3A%20%22Chart.js%20Bar%20Chart%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section full-width="full-width" background-color="#f9faf9">
+        <mj-column width="100%">
+            <mj-image width="32px" src="https://negosy.com/static/img/icon_app_disable.png" />
+        </mj-column>
+        <mj-column width="100%">
+            <mj-text mj-class="subtitle" align="center">
+                @ 2020 NEGOSY
+            </mj-text>
+            <mj-text mj-class="subtitle" align=center>
+                Cal. Antonio de andueza nro. 145 int. 201 La Libertad - Trujillo
+            </mj-text>
+        </mj-column>
     </mj-section>
   </mj-body>
 </mjml>
